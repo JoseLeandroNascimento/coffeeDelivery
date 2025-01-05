@@ -5,23 +5,10 @@ export const Header = styled.header`
     justify-content: space-between;
     padding: 2rem 10rem;
 `
-
-export const LocaleIndicator = styled.span`
-    padding: .8rem 1rem;
-    background: ${(props) => props.theme["purple-100"]} ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .25rem;
-    color: ${(props) => props.theme["purple-300"]};
-    border-radius: 8px;
-    cursor: pointer;
-`
-
 export const ButtonBase = styled.button`
     border: 0;
     padding: .8rem 1rem;
-    border-radius: 8px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +16,14 @@ export const ButtonBase = styled.button`
 
 `
 
+export const LocaleIndicator = styled(ButtonBase)`
+  
+    background: ${(props) => props.theme["purple-100"]} ;
+    gap: .25rem;
+    color: ${(props) => props.theme["purple-300"]};
+    font-size: 1rem;
+  
+`
 
 export const CartButton = styled(ButtonBase) <{ $quantItem?: number }>`
     background: ${(props) => props.theme["yellow-100"]};
