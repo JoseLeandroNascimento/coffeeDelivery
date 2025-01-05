@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const Header = styled.header`
     display: flex;
@@ -8,19 +8,57 @@ export const Header = styled.header`
 
 export const LocaleIndicator = styled.span`
     padding: .8rem 1rem;
-    background: #EBE5F9 ;
+    background: ${(props) => props.theme["purple-100"]} ;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .25rem;
-    color: #8047F8;
+    color: ${(props) => props.theme["purple-300"]};
     border-radius: 8px;
     cursor: pointer;
 `
 
-
-export const CardButton = styled.button`
-
-
+export const ButtonBase = styled.button`
+    border: 0;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
 `
+
+
+export const CartButton = styled(ButtonBase) <{ $quantItem?: number }>`
+    background: ${(props) => props.theme["yellow-100"]};
+    padding: .8rem 1rem;
+    color: ${(props) => props.theme["yellow-900"]};
+    position: relative;
+
+    &::after {
+        content: "${(props) => (props.$quantItem ?? '')}"; 
+        position: absolute;
+        display:  ${(props) => (props.$quantItem && props.$quantItem > 0 ? 'flex' : 'none')};;
+        justify-content: center;
+        align-items: center;
+        right: -8px;
+        top: -8px;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        
+        color: #ffff;
+        background-color: ${(props) => props.theme["yellow-900"]};
+    }
+`
+
+export const GroupRow = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+
+`
+

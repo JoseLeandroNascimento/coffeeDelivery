@@ -1,6 +1,6 @@
 import logo from "../../assets/logo.svg"
-import { MapPin } from "@phosphor-icons/react"
-import { Header, LocaleIndicator } from "./style"
+import { MapPin, ShoppingCart } from "@phosphor-icons/react"
+import { CartButton, GroupRow, Header, LocaleIndicator } from "./style"
 
 export function HomePage() {
 
@@ -8,12 +8,16 @@ export function HomePage() {
         <>
             <Header>
                 <img src={logo} alt="logo do coffee delivery" />
-                <div>
+                <GroupRow>
                     <LocaleIndicator>
-                        <MapPin size={24} weight="fill" />
+                        <MapPin size={20} weight="fill" />
                         Porto Alegre, RS
                     </LocaleIndicator>
-                </div>
+
+                    <CartButton $quantItem={8}>
+                        <ShoppingCart size={20}  weight="fill" />
+                    </CartButton>
+                </GroupRow>
             </Header>
 
             <p></p>
