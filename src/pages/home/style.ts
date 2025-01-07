@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import background from "../../assets/background-header.svg"
 
 export const Header = styled.header`
     display: flex;
@@ -63,3 +64,59 @@ export const GroupRow = styled.div`
 
 `
 
+export const Container = styled.div`
+  position: relative;
+  height: 34rem;
+  width: 100%;
+  
+`;
+
+export const BackgroundLayer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; 
+  filter: blur(10px); 
+`;
+
+export const ContentLayer = styled.div`
+  position: relative;
+  z-index: 2;
+`;
+
+export const TitleBanner =  styled.h1`
+    font-size: 3rem;
+    font-weight: 800;
+    color: ${props => props.theme["gray-400"]};
+
+`
+
+export const SubtitleBanner = styled.p`
+
+    font-size: 1.25rem;
+    font-weight: 400;
+
+`
+
+export const Banner = styled.div`
+
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+
+`
+
+export const ListBeneficio = styled.div`
+    margin-top: 4.1rem;
+    width: max-content;
+    display: grid;
+    row-gap: 1.25rem;
+    column-gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+`
