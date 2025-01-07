@@ -11,7 +11,7 @@ export function HomePage() {
                 <GroupRow>
                     <LocaleIndicator>
                         <MapPin size={20} weight="fill" />
-                        Porto Alegre, RS
+                        <strong>Porto Alegre, RS</strong>
                     </LocaleIndicator>
 
                     <CartButton $quantItem={8}>

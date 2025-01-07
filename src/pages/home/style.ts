@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 export const Header = styled.header`
     display: flex;
@@ -22,6 +22,12 @@ export const LocaleIndicator = styled(ButtonBase)`
     gap: .25rem;
     color: ${(props) => props.theme["purple-300"]};
     font-size: 1rem;
+
+    & strong{
+        color: ${(props) => props.theme["purple-900"]};
+        font-weight: 400;
+
+    }
   
 `
 
