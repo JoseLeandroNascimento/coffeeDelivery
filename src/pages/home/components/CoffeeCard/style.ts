@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const Card = styled.div`
 
     box-sizing: border-box;
-
     position: relative;
     width: 16rem;
     height: 19.37rem;
@@ -18,7 +17,7 @@ export const CardHeader = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    
 
     & img{
 
