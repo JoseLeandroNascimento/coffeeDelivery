@@ -40,7 +40,7 @@ export const CardBody = styled.div`
 export const LabelCard = styled.h3`
 
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     color: ${props => props.theme["gray-400"]};
     line-height: 1.9;

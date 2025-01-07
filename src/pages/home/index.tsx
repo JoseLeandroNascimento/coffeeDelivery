@@ -1,28 +1,14 @@
-import logo from "../../assets/logo.svg"
-import { Coffee, MapPin, Package, ShoppingCart, Timer } from "@phosphor-icons/react"
-import { BackgroundLayer, Banner, CartButton, Container, Content, ContentLayer, GroupRow, Header, ListBeneficio, ListCoffee, LocaleIndicator, SubtitleBanner, TitleBanner } from "./style"
+import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react"
 import bannerCoffee from "../../assets/banner-coffee.svg"
-import { ItemBannerColor, ItemOptionBanner } from "./components/itemOptionBanner"
 import { CoffeeCard } from "./components/CoffeeCard"
+import { ItemBannerColor, ItemOptionBanner } from "./components/itemOptionBanner"
 import { TitlePage } from "./components/itemOptionBanner/style"
+import { BackgroundLayer, Banner, Container, Content, ContentLayer, ListBeneficio, ListCoffee, SubtitleBanner, TitleBanner } from "./style"
 
 export function HomePage() {
 
     return (
         <>
-            <Header>
-                <img src={logo} alt="logo do coffee delivery" />
-                <GroupRow>
-                    <LocaleIndicator>
-                        <MapPin size={20} weight="fill" />
-                        <strong>Porto Alegre, RS</strong>
-                    </LocaleIndicator>
-
-                    <CartButton $quantItem={8}>
-                        <ShoppingCart size={20} weight="fill" />
-                    </CartButton>
-                </GroupRow>
-            </Header>
 
             <Container>
                 <Content>
