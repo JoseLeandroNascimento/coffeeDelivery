@@ -4,6 +4,7 @@ import { BackgroundLayer, Banner, CartButton, Container, Content, ContentLayer, 
 import bannerCoffee from "../../assets/banner-coffee.svg"
 import { ItemBannerColor, ItemOptionBanner } from "./components/itemOptionBanner"
 import { CoffeeCard } from "./components/CoffeeCard"
+import { TitlePage } from "./components/itemOptionBanner/style"
 
 export function HomePage() {
 
@@ -61,7 +62,7 @@ export function HomePage() {
 
             <body>
                 <Content>
-                    <h3>Nossos cafés</h3>
+                    <TitlePage>Nossos cafés</TitlePage>
 
                     <ListCoffee>
                         <CoffeeCard />

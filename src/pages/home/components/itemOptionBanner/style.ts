@@ -37,3 +37,10 @@ export const ItemBannerContent = styled.div`
     gap: .75rem;
 
 `
+
+export const TitlePage = styled.h3`
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: ${props => props.theme["gray-600"]};
+`
