@@ -124,3 +124,12 @@ export const ListBeneficio = styled.div`
     column-gap: 2.5rem;
     grid-template-columns: 1fr 1fr;
 `
+
+export const ListCoffee= styled.div`
+
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(16rem,1fr));
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+    margin-top: 3.37rem;
+`

@@ -1,6 +1,6 @@
 import logo from "../../assets/logo.svg"
 import { Coffee, MapPin, Package, ShoppingCart, Timer } from "@phosphor-icons/react"
-import { BackgroundLayer, Banner, CartButton, Container, Content, ContentLayer, GroupRow, Header, ListBeneficio, LocaleIndicator, SubtitleBanner, TitleBanner } from "./style"
+import { BackgroundLayer, Banner, CartButton, Container, Content, ContentLayer, GroupRow, Header, ListBeneficio, ListCoffee, LocaleIndicator, SubtitleBanner, TitleBanner } from "./style"
 import bannerCoffee from "../../assets/banner-coffee.svg"
 import { ItemBannerColor, ItemOptionBanner } from "./components/itemOptionBanner"
 import { CoffeeCard } from "./components/CoffeeCard"
@@ -63,7 +63,27 @@ export function HomePage() {
                 <Content>
                     <h3>Nossos cafés</h3>
 
-                    <CoffeeCard/>
+                    <ListCoffee>
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        <CoffeeCard />
+
+                        <CoffeeCard />
+                        <CoffeeCard />
+                        
+
+                    </ListCoffee>
                 </Content>
 
             </body>
