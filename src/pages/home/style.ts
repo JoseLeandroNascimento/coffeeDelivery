@@ -1,6 +1,10 @@
 import styled from "styled-components"
 import background from "../../assets/background-header.svg"
 
+export const Content = styled.div`
+    padding: 2rem 10rem;
+`
+
 export const Header = styled.header`
     display: flex;
     justify-content: space-between;
@@ -90,7 +94,7 @@ export const ContentLayer = styled.div`
   z-index: 2;
 `;
 
-export const TitleBanner =  styled.h1`
+export const TitleBanner = styled.h1`
     font-size: 3rem;
     font-weight: 800;
     color: ${props => props.theme["gray-400"]};
