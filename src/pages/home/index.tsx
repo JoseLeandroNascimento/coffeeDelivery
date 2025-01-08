@@ -3,7 +3,8 @@ import bannerCoffee from "../../assets/banner-coffee.svg"
 import { CoffeeCard } from "./components/CoffeeCard"
 import { ItemBannerColor, ItemOptionBanner } from "./components/itemOptionBanner"
 import { TitlePage } from "./components/itemOptionBanner/style"
-import { BackgroundLayer, Banner, Container, Content, ContentLayer, ListBeneficio, ListCoffee, SubtitleBanner, TitleBanner } from "./style"
+import { BackgroundLayer, Banner, Container, ContentLayer, ListBeneficio, ListCoffee, SubtitleBanner, TitleBanner } from "./style"
+import { Content } from "../../styles/global"
 
 export function HomePage() {
 

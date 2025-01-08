@@ -1,9 +1,7 @@
 import styled from "styled-components"
 import background from "../../assets/background-header.svg"
 
-export const Content = styled.div`
-    padding: 2rem 10rem;
-`
+
 
 export const Header = styled.header`
     display: flex;

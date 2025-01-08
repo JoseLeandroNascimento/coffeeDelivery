@@ -125,4 +125,9 @@ export const ButtonAddCart = styled.button`
     border-radius: 6px;
     padding: .5rem;
     line-height: 0;
+
+    &:hover{
+        background-color: ${props => props.theme["purple-300"]};
+
+    }
 `

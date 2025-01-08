@@ -1,8 +1,26 @@
+import { Content } from "../../styles/global";
+import { EntregaForm } from "./components/entregaForm";
+import { BoxLeft, BoxRight, ContainerPayment, Title } from "./style";
 
 
-export function PaymentPage(){
+export function PaymentPage() {
 
-    return(
-        <h1>Payment</h1>
+    return (
+
+        <Content>
+            <ContainerPayment>
+
+                <BoxLeft>
+                    <Title>Complete seu pedido</Title>
+
+                    <EntregaForm/>
+
+                </BoxLeft>
+                <BoxRight>
+                    <Title>Cafés selecionados</Title>
+                </BoxRight>
+
+            </ContainerPayment>
+        </Content>
     )
 }
