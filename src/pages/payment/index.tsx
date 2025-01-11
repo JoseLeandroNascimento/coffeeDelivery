@@ -1,5 +1,6 @@
 import { Content } from "../../styles/global";
 import { EntregaForm } from "./components/entregaForm";
+import { TipoPagamentoForm } from "./components/tipoPagamentoForm";
 import { BoxLeft, BoxRight, ContainerPayment, Title } from "./style";
 
 
@@ -14,6 +15,7 @@ export function PaymentPage() {
                     <Title>Complete seu pedido</Title>
 
                     <EntregaForm/>
+                    <TipoPagamentoForm/>
 
                 </BoxLeft>
                 <BoxRight>
