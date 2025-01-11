@@ -23,7 +23,7 @@ export function TipoPagamentoForm() {
                     <CheckTipoPagamento label="CARTÃO DE DÉBITO">
                         <Bank />
                     </CheckTipoPagamento>
-                    <CheckTipoPagamento label="DINHEIRO">
+                    <CheckTipoPagamento label="DINHEIRO"  >
                         <Money />
                     </CheckTipoPagamento>
                 </ContainerListTipoPagamento>
