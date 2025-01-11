@@ -2,13 +2,13 @@ import { HtmlHTMLAttributes, ReactNode } from "react";
 import { CheckBoxContainer } from "./style";
 
 export interface CheckTipoPagamentoProps extends HtmlHTMLAttributes<HTMLInputElement>{
-
+    type?: "checkbox";
     label: string,
     children: ReactNode
 }
 
 
-export function CheckTipoPagamento({label,children,...rest}:CheckTipoPagamentoProps){
+export function CheckTipoPagamento({type="checkbox",label,children,...rest}:CheckTipoPagamentoProps){
 
     return (
         <CheckBoxContainer>
@@ -16,7 +16,7 @@ export function CheckTipoPagamento({label,children,...rest}:CheckTipoPagamentoPr
                 {children}
                 <span>{label}</span>
             </div>
-            <input type="checkbox" {...rest}/>
+            <input type={type} {...rest}/>
         </CheckBoxContainer>
     )
 }

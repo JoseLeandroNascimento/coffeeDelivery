@@ -17,7 +17,7 @@ export function TipoPagamentoForm() {
             </HeaderForm>
             <form >
                 <ContainerListTipoPagamento>
-                    <CheckTipoPagamento label="CARTÃO DE CRÉDITO">
+                    <CheckTipoPagamento label="CARTÃO DE CRÉDITO"  >
                         <CreditCard />
                     </CheckTipoPagamento>
                     <CheckTipoPagamento label="CARTÃO DE DÉBITO">
