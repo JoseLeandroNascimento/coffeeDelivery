@@ -34,3 +34,11 @@ export const SubtitleFormEntrega = styled.p`
     font-size: .875rem;
     color: ${props => props.theme["gray-400"]};
 `
+
+export const ContainerListTipoPagamento = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+`
