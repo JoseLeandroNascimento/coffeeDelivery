@@ -1,15 +1,35 @@
 import { InputText } from "../../../../styles/global";
-import { EntregaFormContainer } from "./style";
+import { EntregaFormContainer, Group1, Group2, Group3, Group4 } from "./style";
 
 export function EntregaForm() {
     return (
 
-        <EntregaFormContainer>
-            <form >
+        <form >
+            <EntregaFormContainer>
 
-                <InputText placeholder="CEP"/>
+                <Group1>
+                    <InputText placeholder="CEP" />
+                </Group1>
 
-            </form>
-        </EntregaFormContainer>
+                <Group2>
+                    <InputText placeholder="Rua" />
+                </Group2>
+
+                <Group3>
+                    <InputText placeholder="Número" />
+                    <InputText placeholder="Complemento" />
+                </Group3>
+
+                <Group4>
+                    <InputText placeholder="Bairro" />
+
+                    <InputText placeholder="Cidade" />
+
+                    <InputText placeholder="UF" />
+                </Group4>
+
+
+            </EntregaFormContainer>
+        </form>
     )
 }

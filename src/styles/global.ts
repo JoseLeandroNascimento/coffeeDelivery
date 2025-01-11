@@ -28,8 +28,8 @@ export const GrouRow = styled.div`
 export const InputText = styled.input`
 
     border-radius: 4px;
-    border: 1px solid ${props=>props.theme["gray-250"]};
-    background: ${props=>props.theme["gray-100"]};
+    border: 1px solid ${props => props.theme["gray-250"]};
+    background: ${props => props.theme["gray-100"]};
     outline: none;
     padding: .75rem;
 
