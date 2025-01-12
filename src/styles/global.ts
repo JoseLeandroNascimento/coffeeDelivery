@@ -41,3 +41,14 @@ export const InputText = styled.input`
 
 
 `
+
+export const ButtonBase = styled.button`
+    border: 0;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+`

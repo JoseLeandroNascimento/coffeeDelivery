@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import background from "../../assets/background-header.svg"
+import { ButtonBase } from "../../styles/global"
 
 
 
@@ -8,16 +9,7 @@ export const Header = styled.header`
     justify-content: space-between;
     padding: 2rem 10rem;
 `
-export const ButtonBase = styled.button`
-    border: 0;
-    padding: .8rem 1rem;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 
-`
 
 export const LocaleIndicator = styled(ButtonBase)`
   
